@@ -24,17 +24,17 @@ import org.gradle.api.invocation.Gradle
 
 internal class ReleaseNotesBuildListener : BuildListener {
 
-    override fun settingsEvaluated(gradle: Settings) {}
+  override fun settingsEvaluated(gradle: Settings) {}
 
-    override fun projectsLoaded(gradle: Gradle) {
-        println("********* projectsLoaded ********* ")
-    }
+  override fun projectsLoaded(gradle: Gradle) {
+    println("********* projectsLoaded ********* ")
+  }
 
-    override fun projectsEvaluated(gradle: Gradle) {
-        println("********* projectsEvaluated ********* ")
-    }
+  override fun projectsEvaluated(gradle: Gradle) {
+    println("********* projectsEvaluated ********* ")
+  }
 
-    override fun buildFinished(gradle: BuildResult) {
-        println("********* buildFinished ********* ")
-    }
+  override fun buildFinished(gradle: BuildResult) {
+    println("********* buildFinished ********* ")
+  }
 }

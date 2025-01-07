@@ -23,7 +23,7 @@ import org.gradle.api.Project
 
 class ReleaseNotesManagerPlugin : Plugin<Project> {
 
-    override fun apply(project: Project) {
-        project.gradle.addBuildListener(ReleaseNotesBuildListener())
-    }
+  override fun apply(project: Project) {
+    project.gradle.addBuildListener(ReleaseNotesBuildListener())
+  }
 }
